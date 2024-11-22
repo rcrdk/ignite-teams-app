@@ -9,6 +9,7 @@ import {
 import defaultTheme from '@theme/index'
 import { Loading } from '@components/Loading'
 import { StatusBar } from 'react-native'
+import { NewGroup } from '@screens/NewGroup'
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -18,7 +19,8 @@ export default function App() {
 
   return (
     <ThemeProvider theme={defaultTheme}>
-      {fontsLoaded ? <Groups /> : <Loading />}
+      {fontsLoaded ? <NewGroup /> : <Loading />}
+      {/* {fontsLoaded ? <Groups /> : <Loading />} */}
 
       <StatusBar
         barStyle="light-content"

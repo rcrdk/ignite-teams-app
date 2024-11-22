@@ -2,7 +2,7 @@ import styled from 'styled-components/native'
 import { CaretLeft } from 'phosphor-react-native'
 
 export const Container = styled.View`
-  padding-top: ${({ theme }) => theme.SPACE.HEADER_Y};
+  padding-top: ${({ theme }) => theme.SPACE.HEADER_Y}px;
   flex-direction: row;
   align-items: center;
   justify-content: center;
