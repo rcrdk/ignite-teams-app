@@ -1,8 +1,6 @@
 import styled from 'styled-components/native'
 
 export const Container = styled.View`
-  padding-left: ${({ theme }) => theme.SPACE.X};
-  padding-right: ${({ theme }) => theme.SPACE.X};
   padding-top: ${({ theme }) => theme.SPACE.Y};
   padding-bottom: ${({ theme }) => theme.SPACE.Y};
   gap: 8px;
