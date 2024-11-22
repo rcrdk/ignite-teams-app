@@ -1,5 +1,4 @@
 import { UsersThree } from 'phosphor-react-native'
-import { TextInput } from 'react-native'
 import styled from 'styled-components/native'
 
 export const Container = styled.View`
