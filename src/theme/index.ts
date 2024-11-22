@@ -27,6 +27,8 @@ export default {
     XL: 24,
   },
   SPACE: {
+    HEADER_Y: 8,
     X: 24,
+    Y: 32,
   },
 } as const
