@@ -2,10 +2,11 @@ import { Header } from '@components/Header'
 import { Container } from './styles'
 import { Heading } from '@components/Heading'
 import { GroupCard } from '@components/GroupCard'
-import { FlatList, SafeAreaView } from 'react-native'
+import { FlatList } from 'react-native'
 import { useState } from 'react'
 import { ListEmpty } from '@components/ListEmpty'
 import { Button } from '@components/Button'
+import { useNavigation } from '@react-navigation/native'
 
 export function Groups() {
   const [groups, setGroup] = useState([
@@ -13,6 +14,12 @@ export function Groups() {
     'Sou Digital',
     'Meu Rosinha',
   ])
+
+  const navigation = useNavigation()
+
+  function handleNewGroup() {
+    navigation.navigate('new')
+  }
 
   return (
     <Container>
@@ -30,8 +37,7 @@ export function Groups() {
         )}
       />
 
-      <Button label="Criar nova turma" />
-      <SafeAreaView />
+      <Button label="Criar nova turma" onPress={handleNewGroup} />
     </Container>
   )
 }
