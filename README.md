@@ -9,14 +9,13 @@ This is a simple React Native app designed to help users organize soccer teams i
 </p>
 
 ## 📋 Features
-
 - **Group Management**: 
   - Create, view, and delete groups.
 - **Participant Management**: 
   - Add and remove participants to/from teams within a group.
-- **Persistent Data**: 
-  - Save data using [AsyncStorage](https://docs.expo.dev/versions/latest/sdk/async-storage/).
-- **Smooth Navigation**: 
-  - Navigate between screens using [React Navigation](https://reactnavigation.org/docs/getting-started/).
-- **Modern Styling**: 
-  - Styled with [Styled Components](https://styled-components.com/) for clean and reusable designs.
+
+## ⚙️ Tech Stack
+- [React Native](https://reactnative.dev/) + [Expo](https://expo.dev/)
+- [AsyncStorage](https://docs.expo.dev/versions/latest/sdk/async-storage/)
+- [React Navigation](https://reactnavigation.org/docs/getting-started/)
+- [Styled Components](https://styled-components.com/)
